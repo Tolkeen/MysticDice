@@ -24,11 +24,46 @@
                                     <action selector="miceDiceOnePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aM5-xB-nug"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhu-il-d9t">
+                                <rect key="frame" x="16" y="96" width="60" height="60"/>
+                                <state key="normal" title="Button" image="die_face_1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="die_face_2"/>
+                                <connections>
+                                    <action selector="miceDiceTwoPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UIR-bo-4za"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSs-JA-Ujd">
+                                <rect key="frame" x="16" y="164" width="60" height="60"/>
+                                <state key="normal" title="Button" image="die_face_1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="die_face_2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fb-cK-P5B">
+                                <rect key="frame" x="16" y="232" width="60" height="60"/>
+                                <state key="normal" title="Button" image="die_face_1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="die_face_2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bH4-jx-AwK">
+                                <rect key="frame" x="16" y="300" width="60" height="60"/>
+                                <state key="normal" title="Button" image="die_face_1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="die_face_2"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="miceDiceFive" destination="bH4-jx-AwK" id="IHa-gw-dFw"/>
+                        <outlet property="miceDiceFour" destination="1fb-cK-P5B" id="agd-ti-a23"/>
                         <outlet property="miceDiceOne" destination="Jur-ea-7XY" id="Rlg-Z1-dkV"/>
+                        <outlet property="miceDiceThree" destination="jSs-JA-Ujd" id="hdq-60-866"/>
+                        <outlet property="miceDiceTwo" destination="lhu-il-d9t" id="jcN-nN-qUM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

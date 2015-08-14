@@ -11,7 +11,16 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var miceDiceOne: UIButton!
+    @IBOutlet weak var miceDiceTwo: UIButton!
+    @IBOutlet weak var miceDiceThree: UIButton!
+    @IBOutlet weak var miceDiceFour: UIButton!
+    @IBOutlet weak var miceDiceFive: UIButton!
+    
     var miceDiceOneSelected = false
+    var miceDiceTwoSelected = false
+    var miceDiceThreeSelected = false
+    var miceDiceFourSelected = false
+    var miceDiceFiveSelected = false
     var miceDiceCount = 0
     
     override func viewDidLoad() {
@@ -36,5 +45,8 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func miceDiceTwoPressed(sender: UIButton) {
+        
+    }
 }
 
