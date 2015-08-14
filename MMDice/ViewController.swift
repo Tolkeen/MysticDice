@@ -16,12 +16,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var miceDiceFour: UIButton!
     @IBOutlet weak var miceDiceFive: UIButton!
     
+    @IBOutlet weak var enemyDiceOne: UIButton!
+    @IBOutlet weak var enemyDiceTwo: UIButton!
+    @IBOutlet weak var enemyDiceThree: UIButton!
+    @IBOutlet weak var enemyDiceFour: UIButton!
+    @IBOutlet weak var enemyDiceFive: UIButton!
+    
+    
     var miceDiceOneSelected = false
     var miceDiceTwoSelected = false
     var miceDiceThreeSelected = false
     var miceDiceFourSelected = false
     var miceDiceFiveSelected = false
     var miceDiceCount = 0
+    
+    var enemyDiceCount = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,6 +100,56 @@ class ViewController: UIViewController {
             miceDiceCount++
             miceDiceFiveSelected = true
             miceDiceFive.selected = true
+        }
+    }
+    
+    @IBAction func enemyDiceOnePressed(sender: UIButton) {
+        if(enemyDiceOne.selected){
+            enemyDiceOne.selected = false
+            enemyDiceCount--
+        } else {
+            enemyDiceOne.selected = true
+            enemyDiceCount++
+        }
+    }
+    
+    @IBAction func enemyDiceTwoPressed(sender: UIButton) {
+        if(enemyDiceTwo.selected) {
+            enemyDiceTwo.selected = false
+            enemyDiceCount--
+        } else {
+            enemyDiceTwo.selected = true
+            enemyDiceCount++
+        }
+    }
+    
+    @IBAction func enemyDiceThreePressed(sender: UIButton) {
+        if(enemyDiceThree.selected) {
+            enemyDiceThree.selected = false
+            enemyDiceCount--
+        } else {
+            enemyDiceThree.selected = true
+            enemyDiceCount++
+        }
+    }
+    
+    @IBAction func enemyDiceFourPressed(sender: UIButton) {
+        if(enemyDiceFour.selected) {
+            enemyDiceFour.selected = false
+            enemyDiceCount--
+        } else {
+            enemyDiceFour.selected = true
+            enemyDiceCount++
+        }
+    }
+    
+    @IBAction func enemyDiceFivePressed(sender: UIButton) {
+        if(enemyDiceFive.selected) {
+            enemyDiceFive.selected = false
+            enemyDiceCount--
+        } else {
+            enemyDiceFive.selected = true
+            enemyDiceCount++
         }
     }
     

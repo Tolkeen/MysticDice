@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,56 +19,391 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jur-ea-7XY">
                                 <rect key="frame" x="16" y="28" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Esu-yn-mbn"/>
+                                    <constraint firstAttribute="height" constant="60" id="ziI-xy-Fxs"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="die_face_1"/>
                                 <state key="selected" image="die_face_2"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Esu-yn-mbn"/>
+                                        <exclude reference="ziI-xy-Fxs"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Esu-yn-mbn"/>
+                                        <include reference="ziI-xy-Fxs"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="miceDiceOnePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aM5-xB-nug"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhu-il-d9t">
                                 <rect key="frame" x="16" y="96" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="OZH-Ir-Pk2"/>
+                                    <constraint firstAttribute="height" constant="60" id="dEV-he-tQP"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="die_face_1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="selected" image="die_face_2"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OZH-Ir-Pk2"/>
+                                        <exclude reference="dEV-he-tQP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="OZH-Ir-Pk2"/>
+                                        <include reference="dEV-he-tQP"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="miceDiceTwoPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IGR-37-re5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSs-JA-Ujd">
                                 <rect key="frame" x="16" y="164" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="kBg-8I-PN2"/>
+                                    <constraint firstAttribute="height" constant="60" id="zoG-RI-gZd"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="die_face_1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="selected" image="die_face_2"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kBg-8I-PN2"/>
+                                        <exclude reference="zoG-RI-gZd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="kBg-8I-PN2"/>
+                                        <include reference="zoG-RI-gZd"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="miceDiceThreePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vOp-mR-xdD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fb-cK-P5B">
                                 <rect key="frame" x="16" y="232" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="9OG-R4-Hhx"/>
+                                    <constraint firstAttribute="height" constant="60" id="ntU-1X-n5k"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="die_face_1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="selected" image="die_face_2"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9OG-R4-Hhx"/>
+                                        <exclude reference="ntU-1X-n5k"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="9OG-R4-Hhx"/>
+                                        <include reference="ntU-1X-n5k"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="miceDiceFourPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0ZF-da-shI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bH4-jx-AwK">
                                 <rect key="frame" x="16" y="300" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Udf-Ox-Knk"/>
+                                    <constraint firstAttribute="width" constant="60" id="VAB-xu-eKt"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="die_face_1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="selected" image="die_face_2"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Udf-Ox-Knk"/>
+                                        <exclude reference="VAB-xu-eKt"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Udf-Ox-Knk"/>
+                                        <include reference="VAB-xu-eKt"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="miceDiceFivePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vYo-mB-yTm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaO-xO-N9i">
+                                <rect key="frame" x="291" y="117" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="3p7-tp-I7t"/>
+                                    <constraint firstAttribute="height" constant="60" id="oLK-Ro-Z1C"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="die_face_1"/>
+                                <state key="selected" image="die_face_2"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3p7-tp-I7t"/>
+                                        <exclude reference="oLK-Ro-Z1C"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="3p7-tp-I7t"/>
+                                        <include reference="oLK-Ro-Z1C"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="enemyDiceOnePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="otI-lP-LTl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4M-12-qyb">
+                                <rect key="frame" x="291" y="117" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="I2g-i3-pBR"/>
+                                    <constraint firstAttribute="width" constant="60" id="QPS-r7-Tbo"/>
+                                    <constraint firstAttribute="height" constant="60" id="T3e-a4-crN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="tlK-f2-zlc"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="die_face_1"/>
+                                <state key="selected" image="die_face_2"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="I2g-i3-pBR"/>
+                                        <exclude reference="QPS-r7-Tbo"/>
+                                        <exclude reference="T3e-a4-crN"/>
+                                        <exclude reference="tlK-f2-zlc"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="I2g-i3-pBR"/>
+                                        <include reference="QPS-r7-Tbo"/>
+                                        <include reference="T3e-a4-crN"/>
+                                        <include reference="tlK-f2-zlc"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="enemyDiceTwoPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zUD-kk-vEh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0T-LU-D81">
+                                <rect key="frame" x="291" y="117" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="8r3-sm-OgE"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="F2Y-4Y-wi6"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="NdG-SN-2kd"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="WIC-6z-rTN"/>
+                                    <constraint firstAttribute="width" constant="60" id="Ymm-Qc-y7o"/>
+                                    <constraint firstAttribute="height" constant="60" id="h6B-Jf-kyL"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="die_face_1"/>
+                                <state key="selected" image="die_face_2"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8r3-sm-OgE"/>
+                                        <exclude reference="F2Y-4Y-wi6"/>
+                                        <exclude reference="NdG-SN-2kd"/>
+                                        <exclude reference="WIC-6z-rTN"/>
+                                        <exclude reference="Ymm-Qc-y7o"/>
+                                        <exclude reference="h6B-Jf-kyL"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="8r3-sm-OgE"/>
+                                        <include reference="F2Y-4Y-wi6"/>
+                                        <include reference="NdG-SN-2kd"/>
+                                        <include reference="WIC-6z-rTN"/>
+                                        <include reference="Ymm-Qc-y7o"/>
+                                        <include reference="h6B-Jf-kyL"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="enemyDiceThreePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FVa-ip-lvz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2g-zP-BDK">
+                                <rect key="frame" x="291" y="117" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="23x-LU-IJc"/>
+                                    <constraint firstAttribute="width" constant="60" id="Lb1-NK-SiA"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="WxZ-E4-kP5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="bs9-Jt-hMY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="heg-GJ-LuM"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="mzY-GU-nzf"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="die_face_1"/>
+                                <state key="selected" image="die_face_2"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="23x-LU-IJc"/>
+                                        <exclude reference="Lb1-NK-SiA"/>
+                                        <exclude reference="WxZ-E4-kP5"/>
+                                        <exclude reference="bs9-Jt-hMY"/>
+                                        <exclude reference="heg-GJ-LuM"/>
+                                        <exclude reference="mzY-GU-nzf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="23x-LU-IJc"/>
+                                        <include reference="Lb1-NK-SiA"/>
+                                        <include reference="WxZ-E4-kP5"/>
+                                        <include reference="bs9-Jt-hMY"/>
+                                        <include reference="heg-GJ-LuM"/>
+                                        <include reference="mzY-GU-nzf"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="enemyDiceFourPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pzy-mL-B04"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RP-Lu-tR7">
+                                <rect key="frame" x="291" y="117" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="348-WS-TMB"/>
+                                    <constraint firstAttribute="height" constant="60" id="IbL-ix-e3m"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="cwA-AF-sfO"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="fg2-Cd-pvo"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="hOc-cz-BPs"/>
+                                    <constraint firstAttribute="width" constant="60" id="io8-gV-tru"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="kTl-mU-58W"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="yb5-fV-jqx"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="die_face_1"/>
+                                <state key="selected" image="die_face_2"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="348-WS-TMB"/>
+                                        <exclude reference="IbL-ix-e3m"/>
+                                        <exclude reference="cwA-AF-sfO"/>
+                                        <exclude reference="fg2-Cd-pvo"/>
+                                        <exclude reference="hOc-cz-BPs"/>
+                                        <exclude reference="io8-gV-tru"/>
+                                        <exclude reference="kTl-mU-58W"/>
+                                        <exclude reference="yb5-fV-jqx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="348-WS-TMB"/>
+                                        <include reference="IbL-ix-e3m"/>
+                                        <include reference="cwA-AF-sfO"/>
+                                        <include reference="fg2-Cd-pvo"/>
+                                        <include reference="hOc-cz-BPs"/>
+                                        <include reference="io8-gV-tru"/>
+                                        <include reference="kTl-mU-58W"/>
+                                        <include reference="yb5-fV-jqx"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="enemyDiceFivePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KFw-uT-n8z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E2g-zP-BDK" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="0Mf-TC-oGb"/>
+                            <constraint firstItem="jSs-JA-Ujd" firstAttribute="top" secondItem="lhu-il-d9t" secondAttribute="bottom" constant="8" id="2yS-Ae-X98"/>
+                            <constraint firstItem="1fb-cK-P5B" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="3Vx-K5-sqi"/>
+                            <constraint firstItem="AaO-xO-N9i" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="8EF-XR-Fkd"/>
+                            <constraint firstItem="0RP-Lu-tR7" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Cfk-bV-xxm"/>
+                            <constraint firstItem="Jur-ea-7XY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ERo-gW-hsJ"/>
+                            <constraint firstItem="1fb-cK-P5B" firstAttribute="top" secondItem="jSs-JA-Ujd" secondAttribute="bottom" constant="8" id="IVp-4X-wIt"/>
+                            <constraint firstItem="bH4-jx-AwK" firstAttribute="top" secondItem="1fb-cK-P5B" secondAttribute="bottom" constant="8" id="LRX-MB-6ud"/>
+                            <constraint firstItem="Jur-ea-7XY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="ND5-j0-HUd"/>
+                            <constraint firstItem="lhu-il-d9t" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="OtI-gJ-clz"/>
+                            <constraint firstItem="J0T-LU-D81" firstAttribute="top" secondItem="y4M-12-qyb" secondAttribute="bottom" constant="8" id="PNe-i3-5Yz"/>
+                            <constraint firstItem="y4M-12-qyb" firstAttribute="top" secondItem="AaO-xO-N9i" secondAttribute="bottom" constant="8" id="UY8-ab-hnO"/>
+                            <constraint firstItem="AaO-xO-N9i" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="aRK-gU-7Im"/>
+                            <constraint firstItem="E2g-zP-BDK" firstAttribute="top" secondItem="J0T-LU-D81" secondAttribute="bottom" constant="8" id="bc0-ts-3i6"/>
+                            <constraint firstItem="J0T-LU-D81" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="dua-iL-y2S"/>
+                            <constraint firstItem="y4M-12-qyb" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="hyb-i9-Yxc"/>
+                            <constraint firstItem="jSs-JA-Ujd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="nho-Q4-Gmc"/>
+                            <constraint firstItem="0RP-Lu-tR7" firstAttribute="top" secondItem="E2g-zP-BDK" secondAttribute="bottom" constant="8" id="oJS-4n-0u1"/>
+                            <constraint firstItem="bH4-jx-AwK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="qOg-am-1pF"/>
+                            <constraint firstItem="lhu-il-d9t" firstAttribute="top" secondItem="Jur-ea-7XY" secondAttribute="bottom" constant="8" id="z7J-2e-iF0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="y4M-12-qyb"/>
+                                <exclude reference="J0T-LU-D81"/>
+                                <exclude reference="E2g-zP-BDK"/>
+                                <exclude reference="0RP-Lu-tR7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ERo-gW-hsJ"/>
+                                <exclude reference="ND5-j0-HUd"/>
+                                <exclude reference="OtI-gJ-clz"/>
+                                <exclude reference="z7J-2e-iF0"/>
+                                <exclude reference="2yS-Ae-X98"/>
+                                <exclude reference="nho-Q4-Gmc"/>
+                                <exclude reference="3Vx-K5-sqi"/>
+                                <exclude reference="IVp-4X-wIt"/>
+                                <exclude reference="LRX-MB-6ud"/>
+                                <exclude reference="qOg-am-1pF"/>
+                                <exclude reference="8EF-XR-Fkd"/>
+                                <exclude reference="aRK-gU-7Im"/>
+                                <exclude reference="UY8-ab-hnO"/>
+                                <exclude reference="hyb-i9-Yxc"/>
+                                <exclude reference="PNe-i3-5Yz"/>
+                                <exclude reference="dua-iL-y2S"/>
+                                <exclude reference="0Mf-TC-oGb"/>
+                                <exclude reference="bc0-ts-3i6"/>
+                                <exclude reference="Cfk-bV-xxm"/>
+                                <exclude reference="oJS-4n-0u1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="y4M-12-qyb"/>
+                                <include reference="J0T-LU-D81"/>
+                                <include reference="E2g-zP-BDK"/>
+                                <include reference="0RP-Lu-tR7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ERo-gW-hsJ"/>
+                                <include reference="ND5-j0-HUd"/>
+                                <include reference="OtI-gJ-clz"/>
+                                <include reference="z7J-2e-iF0"/>
+                                <include reference="2yS-Ae-X98"/>
+                                <include reference="nho-Q4-Gmc"/>
+                                <include reference="3Vx-K5-sqi"/>
+                                <include reference="IVp-4X-wIt"/>
+                                <include reference="LRX-MB-6ud"/>
+                                <include reference="qOg-am-1pF"/>
+                                <include reference="8EF-XR-Fkd"/>
+                                <include reference="aRK-gU-7Im"/>
+                                <include reference="UY8-ab-hnO"/>
+                                <include reference="hyb-i9-Yxc"/>
+                                <include reference="PNe-i3-5Yz"/>
+                                <include reference="dua-iL-y2S"/>
+                                <include reference="0Mf-TC-oGb"/>
+                                <include reference="bc0-ts-3i6"/>
+                                <include reference="Cfk-bV-xxm"/>
+                                <include reference="oJS-4n-0u1"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="enemyDiceFive" destination="0RP-Lu-tR7" id="zcJ-ZJ-Hyp"/>
+                        <outlet property="enemyDiceFour" destination="E2g-zP-BDK" id="YI2-uu-J6w"/>
+                        <outlet property="enemyDiceOne" destination="AaO-xO-N9i" id="e0a-fX-w6a"/>
+                        <outlet property="enemyDiceThree" destination="J0T-LU-D81" id="29u-2J-y0X"/>
+                        <outlet property="enemyDiceTwo" destination="y4M-12-qyb" id="bwW-mM-yWK"/>
                         <outlet property="miceDiceFive" destination="bH4-jx-AwK" id="IHa-gw-dFw"/>
                         <outlet property="miceDiceFour" destination="1fb-cK-P5B" id="agd-ti-a23"/>
                         <outlet property="miceDiceOne" destination="Jur-ea-7XY" id="Rlg-Z1-dkV"/>
