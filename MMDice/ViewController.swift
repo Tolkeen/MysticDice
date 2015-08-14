@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var miceDiceOne: UIButton!
     var miceDiceOneSelected = false
     var miceDiceCount = 0
     
@@ -27,9 +28,11 @@ class ViewController: UIViewController {
         if(miceDiceOneSelected) {
             miceDiceCount--;
             miceDiceOneSelected = false
+            miceDiceOne.selected = false
         } else {
             miceDiceCount++;
             miceDiceOneSelected = true
+            miceDiceOne.selected = true
         }
     }
 
