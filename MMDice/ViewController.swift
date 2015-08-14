@@ -35,18 +35,63 @@ class ViewController: UIViewController {
 
     @IBAction func miceDiceOnePressed(sender: AnyObject) {
         if(miceDiceOneSelected) {
-            miceDiceCount--;
+            miceDiceCount--
             miceDiceOneSelected = false
             miceDiceOne.selected = false
         } else {
-            miceDiceCount++;
+            miceDiceCount++
             miceDiceOneSelected = true
             miceDiceOne.selected = true
         }
     }
 
     @IBAction func miceDiceTwoPressed(sender: UIButton) {
-        
+        if(miceDiceTwoSelected) {
+            miceDiceCount--;
+            miceDiceTwoSelected = false
+            miceDiceTwo.selected = false
+        } else {
+            miceDiceCount++
+            miceDiceTwoSelected = true
+            miceDiceTwo.selected = true
+        }
     }
+    
+    @IBAction func miceDiceThreePressed(sender: UIButton) {
+        if(miceDiceThreeSelected) {
+            miceDiceCount--
+            miceDiceThreeSelected = false
+            miceDiceThree.selected = false
+        } else {
+            miceDiceCount++
+            miceDiceThreeSelected = true
+            miceDiceThree.selected = true
+        }
+    }
+    
+    @IBAction func miceDiceFourPressed(sender: UIButton) {
+        if(miceDiceFourSelected) {
+            miceDiceCount--
+            miceDiceFourSelected = false
+            miceDiceFour.selected = false
+        } else {
+            miceDiceCount++
+            miceDiceFourSelected = true
+            miceDiceFour.selected = true
+        }
+    }
+    
+    @IBAction func miceDiceFivePressed(sender: UIButton) {
+        if(miceDiceFiveSelected) {
+            miceDiceCount--
+            miceDiceFiveSelected = false
+            miceDiceFive.selected = false
+        } else {
+            miceDiceCount++
+            miceDiceFiveSelected = true
+            miceDiceFive.selected = true
+        }
+    }
+    
 }
 

@@ -31,7 +31,7 @@
                                 </state>
                                 <state key="selected" image="die_face_2"/>
                                 <connections>
-                                    <action selector="miceDiceTwoPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UIR-bo-4za"/>
+                                    <action selector="miceDiceTwoPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IGR-37-re5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSs-JA-Ujd">
@@ -40,6 +40,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="selected" image="die_face_2"/>
+                                <connections>
+                                    <action selector="miceDiceThreePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vOp-mR-xdD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fb-cK-P5B">
                                 <rect key="frame" x="16" y="232" width="60" height="60"/>
@@ -47,6 +50,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="selected" image="die_face_2"/>
+                                <connections>
+                                    <action selector="miceDiceFourPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0ZF-da-shI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bH4-jx-AwK">
                                 <rect key="frame" x="16" y="300" width="60" height="60"/>
@@ -54,6 +60,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="selected" image="die_face_2"/>
+                                <connections>
+                                    <action selector="miceDiceFivePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vYo-mB-yTm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -62,8 +71,8 @@
                         <outlet property="miceDiceFive" destination="bH4-jx-AwK" id="IHa-gw-dFw"/>
                         <outlet property="miceDiceFour" destination="1fb-cK-P5B" id="agd-ti-a23"/>
                         <outlet property="miceDiceOne" destination="Jur-ea-7XY" id="Rlg-Z1-dkV"/>
-                        <outlet property="miceDiceThree" destination="jSs-JA-Ujd" id="hdq-60-866"/>
-                        <outlet property="miceDiceTwo" destination="lhu-il-d9t" id="jcN-nN-qUM"/>
+                        <outlet property="miceDiceThree" destination="jSs-JA-Ujd" id="tyx-3T-HCQ"/>
+                        <outlet property="miceDiceTwo" destination="lhu-il-d9t" id="X2f-fX-cQb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
