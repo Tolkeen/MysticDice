@@ -15,6 +15,10 @@
 		422535A31B7E562D00952042 /* MMDiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422535A21B7E562D00952042 /* MMDiceTests.swift */; };
 		422535AD1B7E59AA00952042 /* die_face_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 422535AC1B7E59AA00952042 /* die_face_1.png */; };
 		422535AF1B7E5D2800952042 /* die_face_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 422535AE1B7E5D2800952042 /* die_face_2.png */; };
+		422535B11B7E863C00952042 /* die_face_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 422535B01B7E863C00952042 /* die_face_4.png */; };
+		422535B31B7E864500952042 /* die_face_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 422535B21B7E864500952042 /* die_face_3.png */; };
+		422535B51B7E865900952042 /* die_face_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 422535B41B7E865900952042 /* die_face_5.png */; };
+		422535B71B7E866000952042 /* die_face_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 422535B61B7E866000952042 /* die_face_6.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		422535A21B7E562D00952042 /* MMDiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMDiceTests.swift; sourceTree = "<group>"; };
 		422535AC1B7E59AA00952042 /* die_face_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = die_face_1.png; sourceTree = "<group>"; };
 		422535AE1B7E5D2800952042 /* die_face_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = die_face_2.png; sourceTree = "<group>"; };
+		422535B01B7E863C00952042 /* die_face_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = die_face_4.png; sourceTree = "<group>"; };
+		422535B21B7E864500952042 /* die_face_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = die_face_3.png; sourceTree = "<group>"; };
+		422535B41B7E865900952042 /* die_face_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = die_face_5.png; sourceTree = "<group>"; };
+		422535B61B7E866000952042 /* die_face_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = die_face_6.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,10 @@
 		4225358A1B7E562D00952042 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				422535B61B7E866000952042 /* die_face_6.png */,
+				422535B41B7E865900952042 /* die_face_5.png */,
+				422535B21B7E864500952042 /* die_face_3.png */,
+				422535B01B7E863C00952042 /* die_face_4.png */,
 				422535AE1B7E5D2800952042 /* die_face_2.png */,
 				422535AC1B7E59AA00952042 /* die_face_1.png */,
 				4225358B1B7E562D00952042 /* Info.plist */,
@@ -201,7 +213,11 @@
 				422535921B7E562D00952042 /* Main.storyboard in Resources */,
 				422535AD1B7E59AA00952042 /* die_face_1.png in Resources */,
 				422535971B7E562D00952042 /* LaunchScreen.xib in Resources */,
+				422535B31B7E864500952042 /* die_face_3.png in Resources */,
 				422535AF1B7E5D2800952042 /* die_face_2.png in Resources */,
+				422535B71B7E866000952042 /* die_face_6.png in Resources */,
+				422535B51B7E865900952042 /* die_face_5.png in Resources */,
+				422535B11B7E863C00952042 /* die_face_4.png in Resources */,
 				422535941B7E562D00952042 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
