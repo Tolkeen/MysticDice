@@ -18,9 +18,8 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jur-ea-7XY">
                                 <rect key="frame" x="16" y="28" width="60" height="60"/>
-                                <state key="normal" title="Button" image="die_face_1">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Button" image="die_face_1"/>
+                                <state key="selected" image="die_face_2"/>
                                 <connections>
                                     <action selector="miceDiceOnePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aM5-xB-nug"/>
                                 </connections>
@@ -35,5 +34,6 @@
     </scenes>
     <resources>
         <image name="die_face_1" width="319" height="313"/>
+        <image name="die_face_2" width="319" height="313"/>
     </resources>
 </document>
