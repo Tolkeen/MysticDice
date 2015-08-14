@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var miceDiceOneSelected = false
+    var miceDiceCount = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func miceDiceOnePressed(sender: AnyObject) {
+        if(miceDiceOneSelected) {
+            miceDiceCount--;
+            miceDiceOneSelected = false
+        } else {
+            miceDiceCount++;
+            miceDiceOneSelected = true
+        }
+    }
 
 }
 
