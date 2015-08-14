@@ -16,20 +16,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var miceDiceFour: UIButton!
     @IBOutlet weak var miceDiceFive: UIButton!
     
+    @IBOutlet weak var miceDisplayDiceOne: UIButton!
+    @IBOutlet weak var miceDisplayDiceTwo: UIButton!
+    @IBOutlet weak var miceDisplayDiceThree: UIButton!
+    @IBOutlet weak var miceDisplayDiceFour: UIButton!
+    @IBOutlet weak var miceDisplayDiceFive: UIButton!
+    
     @IBOutlet weak var enemyDiceOne: UIButton!
     @IBOutlet weak var enemyDiceTwo: UIButton!
     @IBOutlet weak var enemyDiceThree: UIButton!
     @IBOutlet weak var enemyDiceFour: UIButton!
     @IBOutlet weak var enemyDiceFive: UIButton!
     
+    @IBOutlet weak var enemyDisplayDiceOne: UIButton!
+    @IBOutlet weak var enemyDisplayDiceTwo: UIButton!
+    @IBOutlet weak var enemyDisplayDiceThree: UIButton!
+    @IBOutlet weak var enemyDisplayDiceFour: UIButton!
+    @IBOutlet weak var enemyDisplayDiceFive: UIButton!
     
     var miceDiceOneSelected = false
     var miceDiceTwoSelected = false
     var miceDiceThreeSelected = false
     var miceDiceFourSelected = false
     var miceDiceFiveSelected = false
-    var miceDiceCount = 0
     
+    var miceDiceCount = 0
     var enemyDiceCount = 0
     
     
@@ -44,7 +55,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func miceDiceOnePressed(sender: AnyObject) {
-        if(miceDiceOneSelected) {
+        if(miceDiceOne.selected) {
             miceDiceCount--
             miceDiceOneSelected = false
             miceDiceOne.selected = false
@@ -56,7 +67,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func miceDiceTwoPressed(sender: UIButton) {
-        if(miceDiceTwoSelected) {
+        if(miceDiceTwo.selected) {
             miceDiceCount--;
             miceDiceTwoSelected = false
             miceDiceTwo.selected = false
@@ -68,7 +79,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func miceDiceThreePressed(sender: UIButton) {
-        if(miceDiceThreeSelected) {
+        if(miceDiceThree.selected) {
             miceDiceCount--
             miceDiceThreeSelected = false
             miceDiceThree.selected = false
@@ -80,7 +91,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func miceDiceFourPressed(sender: UIButton) {
-        if(miceDiceFourSelected) {
+        if(miceDiceFour.selected) {
             miceDiceCount--
             miceDiceFourSelected = false
             miceDiceFour.selected = false
@@ -92,7 +103,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func miceDiceFivePressed(sender: UIButton) {
-        if(miceDiceFiveSelected) {
+        if(miceDiceFive.selected) {
             miceDiceCount--
             miceDiceFiveSelected = false
             miceDiceFive.selected = false
@@ -151,6 +162,70 @@ class ViewController: UIViewController {
             enemyDiceFive.selected = true
             enemyDiceCount++
         }
+    }
+    
+    @IBAction func rollDice(sender: UIButton) {
+        if(miceDiceOne.selected) {
+            miceDisplayDiceOne.alpha = 1;
+            
+        } else {
+            miceDisplayDiceOne.alpha = 0;
+        }
+        
+        if(miceDiceTwo.selected) {
+            miceDisplayDiceTwo.alpha = 1;
+        } else {
+            miceDisplayDiceTwo.alpha = 0;
+        }
+        
+        if(miceDiceThree.selected) {
+            miceDisplayDiceThree.alpha = 1;
+        } else {
+            miceDisplayDiceThree.alpha = 0;
+        }
+        
+        if(miceDiceFour.selected) {
+            miceDisplayDiceFour.alpha = 1;
+        } else {
+            miceDisplayDiceFour.alpha = 0;
+        }
+        
+        if(miceDiceFive.selected) {
+            miceDisplayDiceFive.alpha = 1;
+        } else {
+            miceDisplayDiceFive.alpha = 0;
+        }
+        
+        if(enemyDiceOne.selected) {
+            enemyDisplayDiceOne.alpha = 1;
+        } else {
+            enemyDisplayDiceOne.alpha = 0;
+        }
+        
+        if(enemyDiceTwo.selected) {
+            enemyDisplayDiceTwo.alpha = 1;
+        } else {
+            enemyDisplayDiceTwo.alpha = 0;
+        }
+        
+        if(enemyDiceThree.selected) {
+            enemyDisplayDiceThree.alpha = 1;
+        } else {
+            enemyDisplayDiceThree.alpha = 0;
+        }
+        
+        if(enemyDiceFour.selected) {
+            enemyDisplayDiceFour.alpha = 1;
+        } else {
+            enemyDisplayDiceFour.alpha = 0;
+        }
+        
+        if(enemyDiceFive.selected) {
+            enemyDisplayDiceFive.alpha = 1;
+        } else {
+            enemyDisplayDiceFive.alpha = 0;
+        }
+        
     }
     
 }
