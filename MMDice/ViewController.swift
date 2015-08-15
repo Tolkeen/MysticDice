@@ -40,6 +40,8 @@ class ViewController: UIViewController {
     var miceDiceFourSelected = false
     var miceDiceFiveSelected = false
     
+    var displays: [String] = ["die_face_1.png", "die_face_2.png", "die_face_3.png", "die_face_4.png", "die_face_5.png", "die_face_6.png"]
+    
     var miceDiceCount = 0
     var enemyDiceCount = 0
     
@@ -166,61 +168,70 @@ class ViewController: UIViewController {
     
     @IBAction func rollDice(sender: UIButton) {
         if(miceDiceOne.selected) {
+            miceDisplayDiceOne.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: miceDisplayDiceOne.state)
             miceDisplayDiceOne.alpha = 1;
-            
         } else {
             miceDisplayDiceOne.alpha = 0;
         }
         
         if(miceDiceTwo.selected) {
+            miceDisplayDiceTwo.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: miceDisplayDiceTwo.state)
             miceDisplayDiceTwo.alpha = 1;
         } else {
             miceDisplayDiceTwo.alpha = 0;
         }
         
         if(miceDiceThree.selected) {
+            miceDisplayDiceThree.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: miceDisplayDiceThree.state)
             miceDisplayDiceThree.alpha = 1;
         } else {
             miceDisplayDiceThree.alpha = 0;
         }
         
         if(miceDiceFour.selected) {
+            miceDisplayDiceFour.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: miceDisplayDiceFour.state)
             miceDisplayDiceFour.alpha = 1;
         } else {
             miceDisplayDiceFour.alpha = 0;
         }
         
         if(miceDiceFive.selected) {
+            miceDisplayDiceFive.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: miceDisplayDiceFive.state)
             miceDisplayDiceFive.alpha = 1;
         } else {
             miceDisplayDiceFive.alpha = 0;
         }
         
         if(enemyDiceOne.selected) {
+            enemyDisplayDiceOne.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: enemyDisplayDiceOne.state)
             enemyDisplayDiceOne.alpha = 1;
         } else {
             enemyDisplayDiceOne.alpha = 0;
         }
         
         if(enemyDiceTwo.selected) {
+            enemyDisplayDiceTwo.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: enemyDisplayDiceTwo.state)
             enemyDisplayDiceTwo.alpha = 1;
         } else {
             enemyDisplayDiceTwo.alpha = 0;
         }
         
         if(enemyDiceThree.selected) {
+            enemyDisplayDiceThree.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: enemyDisplayDiceThree.state)
             enemyDisplayDiceThree.alpha = 1;
         } else {
             enemyDisplayDiceThree.alpha = 0;
         }
         
         if(enemyDiceFour.selected) {
+            enemyDisplayDiceFour.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: enemyDisplayDiceFour.state)
             enemyDisplayDiceFour.alpha = 1;
         } else {
             enemyDisplayDiceFour.alpha = 0;
         }
         
         if(enemyDiceFive.selected) {
+            enemyDisplayDiceFive.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: enemyDisplayDiceFive.state)
             enemyDisplayDiceFive.alpha = 1;
         } else {
             enemyDisplayDiceFive.alpha = 0;
