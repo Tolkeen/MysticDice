@@ -19,6 +19,14 @@
 		422535B31B7E864500952042 /* die_face_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 422535B21B7E864500952042 /* die_face_3.png */; };
 		422535B51B7E865900952042 /* die_face_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 422535B41B7E865900952042 /* die_face_5.png */; };
 		422535B71B7E866000952042 /* die_face_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 422535B61B7E866000952042 /* die_face_6.png */; };
+		427DC9F41B7EEE3F0099FE41 /* side1.png in Resources */ = {isa = PBXBuildFile; fileRef = 427DC9F31B7EEE3F0099FE41 /* side1.png */; };
+		427DC9F61B7EEE480099FE41 /* side2.png in Resources */ = {isa = PBXBuildFile; fileRef = 427DC9F51B7EEE480099FE41 /* side2.png */; };
+		427DC9F81B7EEE540099FE41 /* side3.png in Resources */ = {isa = PBXBuildFile; fileRef = 427DC9F71B7EEE540099FE41 /* side3.png */; };
+		427DC9FA1B7EEE600099FE41 /* side4.png in Resources */ = {isa = PBXBuildFile; fileRef = 427DC9F91B7EEE600099FE41 /* side4.png */; };
+		427DC9FC1B7EEE6D0099FE41 /* side5.png in Resources */ = {isa = PBXBuildFile; fileRef = 427DC9FB1B7EEE6D0099FE41 /* side5.png */; };
+		427DC9FE1B7EEE7E0099FE41 /* side6.png in Resources */ = {isa = PBXBuildFile; fileRef = 427DC9FD1B7EEE7E0099FE41 /* side6.png */; };
+		427DCA001B7EF2F50099FE41 /* defaulticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 427DC9FF1B7EF2F50099FE41 /* defaulticon.png */; };
+		427DCA021B7EF2FD0099FE41 /* selectedicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 427DCA011B7EF2FD0099FE41 /* selectedicon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,14 @@
 		422535B21B7E864500952042 /* die_face_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = die_face_3.png; sourceTree = "<group>"; };
 		422535B41B7E865900952042 /* die_face_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = die_face_5.png; sourceTree = "<group>"; };
 		422535B61B7E866000952042 /* die_face_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = die_face_6.png; sourceTree = "<group>"; };
+		427DC9F31B7EEE3F0099FE41 /* side1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = side1.png; sourceTree = "<group>"; };
+		427DC9F51B7EEE480099FE41 /* side2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = side2.png; sourceTree = "<group>"; };
+		427DC9F71B7EEE540099FE41 /* side3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = side3.png; sourceTree = "<group>"; };
+		427DC9F91B7EEE600099FE41 /* side4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = side4.png; sourceTree = "<group>"; };
+		427DC9FB1B7EEE6D0099FE41 /* side5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = side5.png; sourceTree = "<group>"; };
+		427DC9FD1B7EEE7E0099FE41 /* side6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = side6.png; sourceTree = "<group>"; };
+		427DC9FF1B7EF2F50099FE41 /* defaulticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaulticon.png; sourceTree = "<group>"; };
+		427DCA011B7EF2FD0099FE41 /* selectedicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedicon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +118,20 @@
 		4225358A1B7E562D00952042 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				422535B61B7E866000952042 /* die_face_6.png */,
-				422535B41B7E865900952042 /* die_face_5.png */,
+				427DC9FF1B7EF2F50099FE41 /* defaulticon.png */,
+				427DCA011B7EF2FD0099FE41 /* selectedicon.png */,
+				427DC9F31B7EEE3F0099FE41 /* side1.png */,
+				427DC9F51B7EEE480099FE41 /* side2.png */,
+				427DC9F71B7EEE540099FE41 /* side3.png */,
+				427DC9F91B7EEE600099FE41 /* side4.png */,
+				427DC9FB1B7EEE6D0099FE41 /* side5.png */,
+				427DC9FD1B7EEE7E0099FE41 /* side6.png */,
+				422535AC1B7E59AA00952042 /* die_face_1.png */,
+				422535AE1B7E5D2800952042 /* die_face_2.png */,
 				422535B21B7E864500952042 /* die_face_3.png */,
 				422535B01B7E863C00952042 /* die_face_4.png */,
-				422535AE1B7E5D2800952042 /* die_face_2.png */,
-				422535AC1B7E59AA00952042 /* die_face_1.png */,
+				422535B41B7E865900952042 /* die_face_5.png */,
+				422535B61B7E866000952042 /* die_face_6.png */,
 				4225358B1B7E562D00952042 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -210,14 +234,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427DCA001B7EF2F50099FE41 /* defaulticon.png in Resources */,
 				422535921B7E562D00952042 /* Main.storyboard in Resources */,
+				427DC9FE1B7EEE7E0099FE41 /* side6.png in Resources */,
+				427DC9FA1B7EEE600099FE41 /* side4.png in Resources */,
 				422535AD1B7E59AA00952042 /* die_face_1.png in Resources */,
 				422535971B7E562D00952042 /* LaunchScreen.xib in Resources */,
 				422535B31B7E864500952042 /* die_face_3.png in Resources */,
+				427DC9F81B7EEE540099FE41 /* side3.png in Resources */,
+				427DC9FC1B7EEE6D0099FE41 /* side5.png in Resources */,
 				422535AF1B7E5D2800952042 /* die_face_2.png in Resources */,
 				422535B71B7E866000952042 /* die_face_6.png in Resources */,
+				427DC9F41B7EEE3F0099FE41 /* side1.png in Resources */,
 				422535B51B7E865900952042 /* die_face_5.png in Resources */,
 				422535B11B7E863C00952042 /* die_face_4.png in Resources */,
+				427DC9F61B7EEE480099FE41 /* side2.png in Resources */,
+				427DCA021B7EF2FD0099FE41 /* selectedicon.png in Resources */,
 				422535941B7E562D00952042 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +465,7 @@
 				422535A81B7E562D00952042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		422535A91B7E562D00952042 /* Build configuration list for PBXNativeTarget "MMDiceTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +474,7 @@
 				422535AB1B7E562D00952042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

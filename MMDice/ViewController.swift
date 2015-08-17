@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var miceHitsLabel: UILabel!
+    @IBOutlet weak var enemyHitsLabel: UILabel!
+    @IBOutlet weak var miceRangedLabel: UILabel!
+    @IBOutlet weak var enemyRangedLabel: UILabel!
+    @IBOutlet weak var enemyShieldLabel: UILabel!
+    @IBOutlet weak var miceShieldLabel: UILabel!
+    @IBOutlet weak var miceCheeseLabel: UILabel!
+    @IBOutlet weak var enemyCheeseLabel: UILabel!
+    
+    
     @IBOutlet weak var miceDiceOne: UIButton!
     @IBOutlet weak var miceDiceTwo: UIButton!
     @IBOutlet weak var miceDiceThree: UIButton!
@@ -40,11 +50,10 @@ class ViewController: UIViewController {
     var miceDiceFourSelected = false
     var miceDiceFiveSelected = false
     
-    var displays: [String] = ["die_face_1.png", "die_face_2.png", "die_face_3.png", "die_face_4.png", "die_face_5.png", "die_face_6.png"]
+    var displays: [String] = ["side1.png", "side2.png", "side3.png", "side4.png", "side5.png", "side6.png"]
     
     var miceDiceCount = 0
     var enemyDiceCount = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -167,75 +176,266 @@ class ViewController: UIViewController {
     }
     
     @IBAction func rollDice(sender: UIButton) {
+        var miceMeleeHits = 0
+        var miceRangedHits = 0
+        var miceShields = 0
+        var miceCheeseCount = 0
+        var miceValOne = 0
+        var miceValTwo = 0
+        var miceValThree = 0
+        var miceValFour = 0
+        var miceValFive = 0
+        
+        var enemyMeleeHits = 0
+        var enemyRangedHits = 0
+        var enemyShields = 0
+        var enemyCheeseCount = 0
+        var enemyValOne = 0
+        var enemyValTwo = 0
+        var enemyValThree = 0
+        var enemyValFour = 0
+        var enemyValFive = 0
+        
         if(miceDiceOne.selected) {
-            miceDisplayDiceOne.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: miceDisplayDiceOne.state)
+            miceValOne = Int(arc4random_uniform(6))
+            miceDisplayDiceOne.setImage(UIImage(named: displays[miceValOne]), forState: miceDisplayDiceOne.state)
             miceDisplayDiceOne.alpha = 1;
+            
+            if(miceValOne == 1 || miceValOne == 2 || miceValOne == 4) {
+                miceMeleeHits++
+            }
+            if(miceValOne == 3 || miceValOne == 5) {
+                miceRangedHits++
+            }
+            if(miceValOne == 2 || miceValOne == 4) {
+                miceShields++
+            }
+            if(miceValOne == 0) {
+                miceCheeseCount++
+            }
+            
         } else {
             miceDisplayDiceOne.alpha = 0;
         }
         
         if(miceDiceTwo.selected) {
-            miceDisplayDiceTwo.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: miceDisplayDiceTwo.state)
+            miceValTwo = Int(arc4random_uniform(6))
+            miceDisplayDiceTwo.setImage(UIImage(named: displays[miceValTwo]), forState: miceDisplayDiceTwo.state)
             miceDisplayDiceTwo.alpha = 1;
+            
+            if(miceValTwo == 1 || miceValTwo == 2 || miceValTwo == 4) {
+                miceMeleeHits++
+            }
+            if(miceValTwo == 3 || miceValTwo == 5) {
+                miceRangedHits++
+            }
+            if(miceValTwo == 2 || miceValTwo == 4) {
+                miceShields++
+            }
+            if(miceValTwo == 0) {
+                miceCheeseCount++
+            }
+            
         } else {
             miceDisplayDiceTwo.alpha = 0;
         }
         
         if(miceDiceThree.selected) {
-            miceDisplayDiceThree.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: miceDisplayDiceThree.state)
+            miceValThree = Int(arc4random_uniform(6))
+            miceDisplayDiceThree.setImage(UIImage(named: displays[miceValThree]), forState: miceDisplayDiceThree.state)
             miceDisplayDiceThree.alpha = 1;
+            
+            if(miceValThree == 1 || miceValThree == 2 || miceValThree == 4) {
+                miceMeleeHits++
+            }
+            if(miceValThree == 3 || miceValThree == 5) {
+                miceRangedHits++
+            }
+            if(miceValThree == 2 || miceValThree == 4) {
+                miceShields++
+            }
+            if(miceValThree == 0) {
+                miceCheeseCount++
+            }
+            
         } else {
             miceDisplayDiceThree.alpha = 0;
         }
         
         if(miceDiceFour.selected) {
-            miceDisplayDiceFour.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: miceDisplayDiceFour.state)
+            miceValFour = Int(arc4random_uniform(6))
+            miceDisplayDiceFour.setImage(UIImage(named: displays[miceValFour]), forState: miceDisplayDiceFour.state)
             miceDisplayDiceFour.alpha = 1;
+            
+            if(miceValFour == 1 || miceValFour == 2 || miceValFour == 4) {
+                miceMeleeHits++
+            }
+            if(miceValFour == 3 || miceValFour == 5) {
+                miceRangedHits++
+            }
+            if(miceValFour == 2 || miceValFour == 4) {
+                miceShields++
+            }
+            if(miceValFour == 0) {
+                miceCheeseCount++
+            }
+            
         } else {
             miceDisplayDiceFour.alpha = 0;
         }
         
         if(miceDiceFive.selected) {
-            miceDisplayDiceFive.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: miceDisplayDiceFive.state)
+            miceValFive = Int(arc4random_uniform(6))
+            miceDisplayDiceFive.setImage(UIImage(named: displays[miceValFive]), forState: miceDisplayDiceFive.state)
             miceDisplayDiceFive.alpha = 1;
+            
+            if(miceValFive == 1 || miceValFive == 2 || miceValFive == 4) {
+                miceMeleeHits++
+            }
+            if(miceValFive == 3 || miceValFive == 5) {
+                miceRangedHits++
+            }
+            if(miceValFive == 2 || miceValFive == 4) {
+                miceShields++
+            }
+            if(miceValFive == 0) {
+                miceCheeseCount++
+            }
+            
         } else {
             miceDisplayDiceFive.alpha = 0;
         }
         
         if(enemyDiceOne.selected) {
-            enemyDisplayDiceOne.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: enemyDisplayDiceOne.state)
+            enemyValOne = Int(arc4random_uniform(6))
+            enemyDisplayDiceOne.setImage(UIImage(named: displays[enemyValOne]), forState: enemyDisplayDiceOne.state)
             enemyDisplayDiceOne.alpha = 1;
+            
+            if(enemyValOne == 1 || enemyValOne == 2 || enemyValOne == 4) {
+                enemyMeleeHits++
+            }
+            if(enemyValOne == 3 || enemyValOne == 5) {
+                enemyRangedHits++
+            }
+            if(enemyValOne == 2 || enemyValOne == 4) {
+                enemyShields++
+            }
+            if(enemyValOne == 0) {
+                enemyCheeseCount++
+            }
+            
         } else {
             enemyDisplayDiceOne.alpha = 0;
         }
         
         if(enemyDiceTwo.selected) {
-            enemyDisplayDiceTwo.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: enemyDisplayDiceTwo.state)
+            enemyValTwo = Int(arc4random_uniform(6))
+            enemyDisplayDiceTwo.setImage(UIImage(named: displays[enemyValTwo]), forState: enemyDisplayDiceTwo.state)
             enemyDisplayDiceTwo.alpha = 1;
+            
+            if(enemyValTwo == 1 || enemyValTwo == 2 || enemyValTwo == 4) {
+                enemyMeleeHits++
+            }
+            if(enemyValTwo == 3 || enemyValTwo == 5) {
+                enemyRangedHits++
+            }
+            if(enemyValTwo == 2 || enemyValTwo == 4) {
+                enemyShields++
+            }
+            if(enemyValTwo == 0) {
+                enemyCheeseCount++
+            }
+            
         } else {
             enemyDisplayDiceTwo.alpha = 0;
         }
         
         if(enemyDiceThree.selected) {
-            enemyDisplayDiceThree.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: enemyDisplayDiceThree.state)
+            enemyValThree = Int(arc4random_uniform(6))
+            enemyDisplayDiceThree.setImage(UIImage(named: displays[enemyValThree]), forState: enemyDisplayDiceThree.state)
             enemyDisplayDiceThree.alpha = 1;
+            
+            if(enemyValThree == 1 || enemyValThree == 2 || enemyValThree == 4) {
+                enemyMeleeHits++
+            }
+            if(enemyValThree == 3 || enemyValThree == 5) {
+                enemyRangedHits++
+            }
+            if(enemyValThree == 2 || enemyValThree == 4) {
+                enemyShields++
+            }
+            if(enemyValThree == 0) {
+                enemyCheeseCount++
+            }
+            
         } else {
             enemyDisplayDiceThree.alpha = 0;
         }
         
         if(enemyDiceFour.selected) {
-            enemyDisplayDiceFour.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: enemyDisplayDiceFour.state)
+            enemyValFour = Int(arc4random_uniform(6))
+            enemyDisplayDiceFour.setImage(UIImage(named: displays[enemyValFour]), forState: enemyDisplayDiceFour.state)
             enemyDisplayDiceFour.alpha = 1;
+            
+            if(enemyValFour == 1 || enemyValFour == 2 || enemyValFour == 4) {
+                enemyMeleeHits++
+            }
+            if(enemyValFour == 3 || enemyValFour == 5) {
+                enemyRangedHits++
+            }
+            if(enemyValFour == 2 || enemyValFour == 4) {
+                enemyShields++
+            }
+            if(enemyValFour == 0) {
+                enemyCheeseCount++
+            }
+            
         } else {
             enemyDisplayDiceFour.alpha = 0;
         }
         
         if(enemyDiceFive.selected) {
-            enemyDisplayDiceFive.setImage(UIImage(named: displays[Int(arc4random_uniform(6))]), forState: enemyDisplayDiceFive.state)
+            enemyValFive = Int(arc4random_uniform(6))
+            enemyDisplayDiceFive.setImage(UIImage(named: displays[enemyValFive]), forState: enemyDisplayDiceFive.state)
             enemyDisplayDiceFive.alpha = 1;
+            
+            if(enemyValFive == 1 || enemyValFive == 2 || enemyValFive == 4) {
+                enemyMeleeHits++
+            }
+            if(enemyValFive == 3 || enemyValFive == 5) {
+                enemyRangedHits++
+            }
+            if(enemyValFive == 2 || enemyValFive == 4) {
+                enemyShields++
+            }
+            if(enemyValFive == 0) {
+                enemyCheeseCount++
+            }
+            
         } else {
             enemyDisplayDiceFive.alpha = 0;
         }
+        
+        var miceMelee = String(miceMeleeHits) + " melee"
+        var enemyMelee = String(enemyMeleeHits) + " melee"
+        var miceRanged = String(miceRangedHits) + " ranged"
+        var enemyRanged = String(enemyRangedHits) + " ranged"
+        var miceDefense = String(miceShields) + " defense"
+        var enemyDefense = String(enemyShields) + " defense"
+        var miceCheese = String(miceCheeseCount) + " cheese"
+        var enemyCheese = String(enemyCheeseCount) + " cheese"
+        enemyHitsLabel.text = enemyMelee
+        enemyHitsLabel.textAlignment = NSTextAlignment.Right
+        miceHitsLabel.text = miceMelee
+        enemyRangedLabel.text = enemyRanged
+        enemyRangedLabel.textAlignment = NSTextAlignment.Right
+        miceRangedLabel.text = miceRanged
+        enemyShieldLabel.text = enemyDefense
+        enemyShieldLabel.textAlignment = NSTextAlignment.Right
+        miceShieldLabel.text = miceDefense
+        enemyCheeseLabel.text = enemyCheese
+        enemyCheeseLabel.textAlignment = NSTextAlignment.Right
+        miceCheeseLabel.text = miceCheese
         
     }
     
