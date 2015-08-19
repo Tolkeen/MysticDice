@@ -416,14 +416,14 @@ class ViewController: UIViewController {
             enemyDisplayDiceFive.alpha = 0;
         }
         
-        var miceMelee = String(miceMeleeHits) + " melee"
-        var enemyMelee = String(enemyMeleeHits) + " melee"
-        var miceRanged = String(miceRangedHits) + " ranged"
-        var enemyRanged = String(enemyRangedHits) + " ranged"
-        var miceDefense = String(miceShields) + " defense"
-        var enemyDefense = String(enemyShields) + " defense"
-        var miceCheese = String(miceCheeseCount) + " cheese"
-        var enemyCheese = String(enemyCheeseCount) + " cheese"
+        let miceMelee = String(miceMeleeHits) + " melee"
+        let enemyMelee = String(enemyMeleeHits) + " melee"
+        let miceRanged = String(miceRangedHits) + " ranged"
+        let enemyRanged = String(enemyRangedHits) + " ranged"
+        let miceDefense = String(miceShields) + " defense"
+        let enemyDefense = String(enemyShields) + " defense"
+        let miceCheese = String(miceCheeseCount) + " cheese"
+        let enemyCheese = String(enemyCheeseCount) + " cheese"
         enemyHitsLabel.text = enemyMelee
         enemyHitsLabel.textAlignment = NSTextAlignment.Right
         miceHitsLabel.text = miceMelee
