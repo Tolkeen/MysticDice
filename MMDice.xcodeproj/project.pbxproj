@@ -27,6 +27,8 @@
 		427DC9FE1B7EEE7E0099FE41 /* side6.png in Resources */ = {isa = PBXBuildFile; fileRef = 427DC9FD1B7EEE7E0099FE41 /* side6.png */; };
 		427DCA001B7EF2F50099FE41 /* defaulticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 427DC9FF1B7EF2F50099FE41 /* defaulticon.png */; };
 		427DCA021B7EF2FD0099FE41 /* selectedicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 427DCA011B7EF2FD0099FE41 /* selectedicon.png */; };
+		4289316F1B8534E9004B4533 /* Default-Portrait.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4289316E1B8534E9004B4533 /* Default-Portrait.JPG */; };
+		42D3F23F1B8823BC00044389 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D3F23E1B8823BC00044389 /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		427DC9FD1B7EEE7E0099FE41 /* side6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = side6.png; sourceTree = "<group>"; };
 		427DC9FF1B7EF2F50099FE41 /* defaulticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaulticon.png; sourceTree = "<group>"; };
 		427DCA011B7EF2FD0099FE41 /* selectedicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedicon.png; sourceTree = "<group>"; };
+		4289316E1B8534E9004B4533 /* Default-Portrait.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Default-Portrait.JPG"; sourceTree = "<group>"; };
+		42D3F23E1B8823BC00044389 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 		4225358A1B7E562D00952042 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42D3F23E1B8823BC00044389 /* background.png */,
+				4289316E1B8534E9004B4533 /* Default-Portrait.JPG */,
 				427DC9FF1B7EF2F50099FE41 /* defaulticon.png */,
 				427DCA011B7EF2FD0099FE41 /* selectedicon.png */,
 				427DC9F31B7EEE3F0099FE41 /* side1.png */,
@@ -199,7 +205,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Joshua Rodriguez";
 				TargetAttributes = {
 					422535861B7E562D00952042 = {
@@ -247,11 +253,13 @@
 				427DC9FC1B7EEE6D0099FE41 /* side5.png in Resources */,
 				422535AF1B7E5D2800952042 /* die_face_2.png in Resources */,
 				422535B71B7E866000952042 /* die_face_6.png in Resources */,
+				42D3F23F1B8823BC00044389 /* background.png in Resources */,
 				427DC9F41B7EEE3F0099FE41 /* side1.png in Resources */,
 				422535B51B7E865900952042 /* die_face_5.png in Resources */,
 				422535B11B7E863C00952042 /* die_face_4.png in Resources */,
 				427DC9F61B7EEE480099FE41 /* side2.png in Resources */,
 				427DCA021B7EF2FD0099FE41 /* selectedicon.png in Resources */,
+				4289316F1B8534E9004B4533 /* Default-Portrait.JPG in Resources */,
 				422535941B7E562D00952042 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +342,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -402,6 +411,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MMDice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tolkeen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -415,6 +425,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MMDice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tolkeen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -434,6 +445,7 @@
 				);
 				INFOPLIST_FILE = MMDiceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tolkeen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MMDice.app/MMDice";
 			};
@@ -449,6 +461,7 @@
 				);
 				INFOPLIST_FILE = MMDiceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tolkeen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MMDice.app/MMDice";
 			};
